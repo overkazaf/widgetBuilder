@@ -1,8 +1,98 @@
 <meta charset="utf-8">
+
+<!-- header  -->
+<div class="widget-header" operable="upload">
+	<style type="text/css">
+		.widget-header {min-width:1400px;width:105%;height:355px;}
+		.widget-header img.img-origin{width:100%;height:100%;border:none;}
+		.widget-header .widget-logo{position: absolute;top:115px;left:190px;}
+		.widget-header img.img-logo{width:400px;height:125px;border:none;}
+	</style>
+	<img class="img-origin" src="images/header.png" />
+	<div class="widget-logo">
+		<img src="images/logo.png" class="img-logo"/>
+	</div>
+</div>
+<!-- header end -->
+<!-- navbar-list -->
+<div class="widget-navbar-list" operable="navbar-list">
+	<style type="text/css">
+		.widget-navbar-list{width:980px;height:100px;}
+		.widget-navbar-list ul.navbar-list{margin:0;padding:0;height:100%;width:auto;list-style-type:none;}
+		.widget-navbar-list ul.navbar-list li.navbar-list-item{position: relative;float:left;height:100%;width:107px;border-left:1px solid #aaa;cursor:pointer;}
+		.widget-navbar-list ul.navbar-list li.navbar-list-item:last-child{border-right:1px solid #aaa;}
+		.widget-navbar-list ul.navbar-list li.navbar-list-item span.nav-icon{display: block;width:55px;height:55px;background-color:#E27379;margin-left: 25px;position:absolute;top:10px;}
+		.widget-navbar-list ul.navbar-list li.navbar-list-item span.nav-icon img{width:55px;height:55px;}
+		.widget-navbar-list ul.navbar-list li.navbar-list-item a.nav-item{display: block;width:95px;margin-left: 5px;text-align: center;color:#E27379;font-weight: bold;font-family: "黑体";position:absolute;bottom:10px;}
+
+		/* active item class */
+		.widget-navbar-list ul.navbar-list li.active span.nav-icon{background-color:#ccc;}
+		.widget-navbar-list ul.navbar-list li.active a.nav-item{color:#999;}
+	</style>
+	<ul class="navbar-list">
+		<li class="navbar-list-item">
+			<span class="nav-icon">
+				<img src="images/nav-home.png">
+			</span>
+			<a class="nav-item">首  页</a>
+		</li>
+		<li class="navbar-list-item active">
+			<span class="nav-icon">
+				<img src="images/nav-gzdt.png">
+			</span>
+			<a class="nav-item">工作动态</a>
+		</li>
+		<li class="navbar-list-item">
+			<span class="nav-icon">
+				<img src="images/nav-zcwj.png">
+			</span>
+			<a class="nav-item">政策文件</a>
+		</li>
+		<li class="navbar-list-item">
+			<span class="nav-icon">
+				<img src="images/nav-ssfa.png">
+			</span>
+			<a class="nav-item">实施方案</a>
+		</li>
+		<li class="navbar-list-item">
+			<span class="nav-icon">
+				<img src="images/nav-gzzd.png">
+			</span>
+			<a class="nav-item">规章制度</a>
+		</li>
+		<li class="navbar-list-item">
+			<span class="nav-icon">
+				<img src="images/nav-sjts.png">
+			</span>
+			<a class="nav-item">实践探索</a>
+		</li>
+		<li class="navbar-list-item">
+			<span class="nav-icon">
+				<img src="images/nav-hzxm.png">
+			</span>
+			<a class="nav-item">合作项目</a>
+		</li>
+		<li class="navbar-list-item">
+			<span class="nav-icon">
+				<img src="images/nav-bxcg.png">
+			</span>
+			<a class="nav-item">办学成果</a>
+		</li>
+		<li class="navbar-list-item">
+			<span class="nav-icon">
+				<img src="images/nav-xxfc.png">
+			</span>
+			<a class="nav-item">学校风采</a>
+		</li>
+	</ul>
+</div>
+<!-- navbar-list end -->
+<br>
+
 <!-- powerpoint -->
 <div class="widget-powerpoint" operable="powerpoint">
 	<style>
-		.widget-powerpoint{width:415px;height:190px;background-color: #eef;}
+		.widget-powerpoint{width:415px;height:240px;background-color: #eef;}
 		.widget-powerpoint .powerpoint-body{width:100%;height:100%;position: relative;}
 		.widget-powerpoint .powerpoint-footer{position: absolute;bottom:0;left:0;width:100%;height:25px;line-height: 25px;}
 		.widget-powerpoint .powerpoint-footer .powerpoint-title{position:relative;left:0;bottom:0;text-align:left;text-indent:20px;background-color: #010101;opacity: 0.2;filter:alpha(opacity:20);width:100%;height:100%;color:#fff;font-size:12px;}
@@ -25,7 +115,36 @@
 </div>
 <!-- powerpoint end -->
 
-<br>
+
+<!-- top-news -->
+<div class="widget-news">
+	<style type="text/css">
+		.widget-news{width:530px;padding:10px 20px 10px 20px;height:220px;background-color: #eee;}
+		.widget-news .news-hot{height:95px;border-bottom:1px dashed #aaa;}
+		.widget-news .news-hot span.news-title{font-size: 14px;font-weight: bold;display: block;}
+		.widget-news .news-hot p.news-desc{font-size: 12px;line-height: 24px;width:505px;}
+
+		.widget-news ul.news-list{margin:0;padding:0;height:auto;min-height:100px;list-style-type:none;}
+		.widget-news ul.news-list li.news-list-item{position: relative;text-indent:20px;font-size:12px;width:100%;height:24px;line-height: 24px;}
+
+		.widget-news ul.news-list li.news-list-item span.date{position: absolute;right:20px;}
+	</style>
+	<div class="news-hot">
+		<span class="news-title">TOP:小学生“恋官”根子在成人</span>
+		<p class="news-desc">
+			&nbsp;&nbsp;我们的小学生怎么了？天真无邪的孩子竟然成了“官迷”，热衷“当官”。据媒体调查，有八成孩子明确希望当...
+		</p>
+	</div>
+	<ul class="news-list">
+		<li class="news-list-item">南通市全面建立和不断完善覆盖企业城镇职工、农..<span class="date">2013-11-21</span></li>
+		<li class="news-list-item">南通警方推出办证系列便民举措<span class="date">2013-11-21</span></li>
+		<li class="news-list-item">福元路大桥成长沙第八座过湘江通道<span class="date">2013-11-21</span></li>
+		<li class="news-list-item">南通第四届人民代表大会第一次会议开幕<span class="date">2013-11-21</span></li>
+		<li class="news-list-item">南通四届人大一次会议开幕<span class="date">2013-11-21</span></li>
+	</ul>
+</div>
+<!-- top-news end -->
+
 <!-- image -->
 <div class="widget-upload" operable="upload">
 	<style>
@@ -56,7 +175,7 @@
 		.widget-panel .panel-header .header-title{position: absolute;left:50px;top:6px;}
 		.header-title .ft{font-family: "Microsoft Yahei";font-size: 18px;font-weight: bold;}
 		.header-title .ft-pinyin{color:#aaa;font-size: 10px;display: block;font-family: "Arial"}
-		.widget-panel .panel-header .more{position: absolute;font-size:12px;right:16px;top:20px;width:40px;height:12px;line-height:8px;padding:1px;border-radius:5px;cursor:pointer;text-align: center;background-color:#C8191E;color:#fff;font-family: "Microsoft Yahei";}
+		.widget-panel .panel-header .more{position: absolute;font-size:10px;right:16px;top:20px;width:40px;height:16px;line-height:14px;padding:1px;border-radius:5px;cursor:pointer;text-align: center;background-color:#C8191E;color:#fff;font-family: "Microsoft Yahei";display: block;}
 		.widget-panel .panel-body{width:100%;height:auto;min-height:10px;overflow: hidden;}
 		.widget-panel ul.panel-list {margin:0;padding:0;height:auto;width:100%;}
 		.widget-panel ul.panel-list li.panel-list-item{font-size:12px;width:100%;line-height:25px;height: 25px;text-indent:30px;}
@@ -71,7 +190,7 @@
 				<span class="ft">规章制度</span>
 				<small class="ft-pinyin">GUIZHANGZHIDU</small>
 			</span>
-			<span class="more">+more</span>
+			<span class="more">+更多</span>
 		</div>
 		<div class="panel-body">
 			<ul class="panel-list">
@@ -107,7 +226,7 @@
 		.widget-panel .panel-header .header-title{position: absolute;left:50px;top:6px;}
 		.header-title .ft{font-family: "Microsoft Yahei";font-size: 18px;font-weight: bold;}
 		.header-title .ft-pinyin{color:#aaa;font-size: 10px;display: block;font-family: "Arial"}
-		.widget-panel .panel-header .more{position: absolute;font-size:12px;right:16px;top:20px;width:40px;height:12px;line-height:8px;padding:1px;border-radius:5px;cursor:pointer;text-align: center;background-color:#C8191E;color:#fff;font-family: "Microsoft Yahei";}
+		.widget-panel .panel-header .more{position: absolute;font-size:10px;right:16px;top:20px;width:40px;height:16px;line-height:14px;padding:1px;border-radius:5px;cursor:pointer;text-align: center;background-color:#C8191E;color:#fff;font-family: "Microsoft Yahei";display: block;}
 		.widget-panel .panel-body{width:100%;height:auto;min-height:10px;overflow: hidden;}
 		.widget-panel ul.panel-list {margin:0;padding:0;height:auto;width:100%;}
 		.widget-panel ul.panel-list li.panel-list-item{font-size:12px;width:100%;line-height:25px;height: 25px;text-indent:30px;}
@@ -159,7 +278,7 @@
 		.header-title .ft{font-family: "Microsoft Yahei";font-size: 18px;font-weight: bold;}
 		.header-title .ft-pinyin{color:#aaa;font-size: 10px;display: block;font-family: "Arial"}
 		
-		.widget-panel .panel-header .more{position: absolute;font-size:12px;right:16px;top:20px;width:40px;height:12px;line-height:8px;padding:1px;border-radius:5px;cursor:pointer;text-align: center;background-color:#C8191E;color:#fff;font-family: "Microsoft Yahei";}
+		.widget-panel .panel-header .more{position: absolute;font-size:10px;right:16px;top:20px;width:40px;height:16px;line-height:14px;padding:1px;border-radius:5px;cursor:pointer;text-align: center;background-color:#C8191E;color:#fff;font-family: "Microsoft Yahei";display: block;}
 		.widget-panel .panel-body{width:100%;height:auto;min-height:10px;overflow: hidden;}
 		.widget-panel ul.panel-list {margin:0;padding:0;height:auto;width:100%;}
 		.widget-panel ul.panel-list li.panel-list-item{font-size:12px;width:100%;line-height:25px;height: 25px;text-indent:30px;}
